@@ -71,7 +71,7 @@ strong {
 
 .description strong:hover {
 	background-color: #07e897;
-	padding: 0 .5em ;
+	padding: 0 0.5rem ;
 	border-radius: .2em;
 	transition:all 0.5s ease-in-out;
 }
@@ -131,14 +131,23 @@ strong {
 	font-size: 1.5rem;
 	color: #07e897
 }
+
+.contacts_title ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+
+.contacts_title li {
+	display: inline-block;
+
+}
 /*-------------------------------------------------------------------------*/
 
 
 /*-------------------------------------------------------------------------*/
 /* Typewriter -> CVE Crawler Bot */
 .title_bot {
-	display: flex;
-	justify-content: flex-start;
 	width: 21ch;
 	animation: typing 2s steps(21), blink .5s step-end infinite alternate;
 	white-space: nowrap;
