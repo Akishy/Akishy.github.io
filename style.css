@@ -44,7 +44,7 @@ html {
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: center;
-	padding: 1em calc(5em + 2vw);
+	padding: 1em calc(3em + 2vw);
 	border-radius: 2px;
 }
 
