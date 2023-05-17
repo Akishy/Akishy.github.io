@@ -32,8 +32,8 @@ html {
 }
 
 .logo img {
-	height: calc(10rem + 0.5vw);
-	width: calc(10rem + 0.5vw);
+	height: calc(12rem);
+	width: calc(12rem);
 	/*margin-top: 20px;*/
 	/*margin-bottom: 20px;*/
 }
