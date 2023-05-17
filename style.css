@@ -4,7 +4,7 @@
 /* Main CSS */
 
 :root {
-	font-size: calc(0.5rem + 0.6vw);
+	font-size: calc(0.5rem + 0.9vw);
 	font-family: "Trebuchet MS", "Lucida Sans";
 }
 
@@ -70,7 +70,8 @@ strong {
 
 
 .description strong:hover {
-	background-color: #07e897;
+	background-color: #07F59E;
+	color: #ffffff;
 	padding: 0 0.5rem ;
 	border-radius: .2em;
 	transition:all 0.5s ease-in-out;
