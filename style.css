@@ -2,6 +2,13 @@
 
 /*-------------------------------------------------------------------------*/
 /* Main CSS */
+
+:root {
+	font-size: calc(0.5rem + 0.6vw);
+	font-family: "Trebuchet MS", "Lucida Sans";
+}
+
+
 html {
 	background: #000000;
 }
@@ -13,35 +20,61 @@ html {
 	white-space: normal;
 	color: #ffffff;
 	display: grid;
-	place-items: center;
+	place-itrems: center;
 }
 
 
 .logo {
-	height: 120px;
-	width: 120px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.logo img {
+	height: calc(10rem + 0.5vw);
+	width: calc(10rem + 0.5vw);
+	/*margin-top: 20px;*/
+	/*margin-bottom: 20px;*/
 }
 
 
 .description_bot_container {
-	padding: 5px 10px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	padding: 1em calc(5em + 2vw);
 	border-radius: 2px;
 }
 
 
 .description {
-	margin: 20px;
+	margin: 1em;
 	font-family: 'Heebo', sans-serif;
 	text-align: justify;
 }
 
-
-strong {
-	color: #07e897;
+.description p {
+	text-indent: 2rem;
+	line-height: 1.5;
 }
 
+
+strong {
+	color: inherit;
+	-webkit-transition: 0.5s ease-in-out;
+
+}
+
+
+
+.description strong:hover {
+	background-color: #07e897;
+	padding: 0 .5em ;
+	border-radius: .2em;
+	transition:all 0.5s ease-in-out;
+}
 
 .advantages_bot {
 	font-family: 'Heebo', sans-serif;
@@ -51,13 +84,12 @@ strong {
 
 .advantages_title {
 	text-align: center;
-	font-family: "Trebuchet MS", "Lucida Sans";
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 
 .advantages_list {
-	padding: 20px;
+	padding: 1em;
 }
 
 
@@ -77,19 +109,18 @@ strong {
 	border-radius: 4px;
 	background: #000000;
 	color: #ffffff;
-	font-family: "Trebuchet MS", "Lucida Sans";
 }
 
 
 .bullet li:before {
 	position: absolute;
 	top: -0.7em;
-	/* padding-left: 0.4em;
-	padding-right: 0.4em; */
-	font-size: 16px;
-	font-weight: bold;
-	color: #000000;
-	background: #ffffff;
+	padding-left: 0.15rem;
+	padding-right: 0.15rem;
+	font-size: 1rem;
+	font-weight: lighter;
+	color: inherit;
+	background: inherit;
 	border-radius: 50%;
 	counter-increment: li;
 	content: counter(li);
@@ -97,8 +128,7 @@ strong {
 
 
 .contacts_title {
-	font-size: 1.5em;
-	font-family: "Trebuchet MS", "Lucida Sans";
+	font-size: 1.5rem;
 	color: #07e897
 }
 /*-------------------------------------------------------------------------*/
@@ -107,14 +137,14 @@ strong {
 /*-------------------------------------------------------------------------*/
 /* Typewriter -> CVE Crawler Bot */
 .title_bot {
+	display: flex;
+	justify-content: flex-start;
 	width: 21ch;
 	animation: typing 2s steps(21), blink .5s step-end infinite alternate;
 	white-space: nowrap;
 	overflow: hidden;
-	font-family: "Trebuchet MS", "Lucida Sans";
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	color: #07e897;
-	margin-top: 15px;
 }
 
 
